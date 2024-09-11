@@ -18,6 +18,7 @@
         "build": "vite build --config vite.config.ts",
         "postbuild": "chmod +x dist/index.js",
         "test": "vitest run",
+        "release": "changeset publish",
         "changeset-version": "changeset version && pnpm run md:fix"
     },
     "homepage": "https://github.com/yceffort/ndive-password-generator#readme",
