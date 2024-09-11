@@ -1,5 +1,6 @@
-import meow from 'meow'
 import chalk from 'chalk'
+import meow from 'meow'
+
 import {generatePassword} from './generator'
 
 const DEFAULT_LENGTH = 12
@@ -33,14 +34,15 @@ export function run(): void {
     const length = cli.input[0] ? parseInt(cli.input[0], 10) : cli.flags.length || DEFAULT_LENGTH
 
     if (isNaN(length) || length < 8) {
+        // eslint-disable-next-line no-console
         console.error(chalk.red('Error: Password length must be at least 8 characters.'))
         return process.exit(1)
     }
 
     const password = generatePassword(length)
-    const result = [1, 2, 3].at(-1)
-    console.log(result)
 
+    // eslint-disable-next-line no-console
     console.log(chalk.green('Generated password:'))
+    // eslint-disable-next-line no-console
     console.log(chalk.blue(password))
 }
