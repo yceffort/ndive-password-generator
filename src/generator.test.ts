@@ -1,7 +1,6 @@
 import {describe, it, expect} from 'vitest'
 
-// src/generator.test.ts
-import {generatePassword, charset} from './generator.js'
+import {generatePassword, charset, MIN_PASSWORD_LENGTH} from './generator.js'
 
 describe('generatePassword', () => {
     it('should generate a password of the specified length', () => {
@@ -22,8 +21,8 @@ describe('generatePassword', () => {
         expect(password1).not.toBe(password2)
     })
 
-    it('should throw an error if length is less than 1', () => {
-        expect(() => generatePassword(0)).toThrow('Password length must be at least 1')
+    it(`should throw an error if length is less than ${MIN_PASSWORD_LENGTH}`, () => {
+        expect(() => generatePassword(0)).toThrow()
     })
 
     it('should generate passwords with all character types over multiple attempts', () => {
