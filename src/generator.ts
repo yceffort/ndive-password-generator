@@ -1,8 +1,10 @@
 export const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}|;:,.<>?'
 
+export const MIN_PASSWORD_LENGTH = 8
+
 export function generatePassword(length: number): string {
-    if (length < 1) {
-        throw new Error('Password length must be at least 1')
+    if (length < MIN_PASSWORD_LENGTH) {
+        throw new Error(`Password length must be at least ${MIN_PASSWORD_LENGTH}`)
     }
 
     let password = ''
