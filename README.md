@@ -32,4 +32,4 @@ Tq|[^9v8Y*5LlsUN^sGV4xW:BKOLLg;80*D__#.=-T1#ushc2I_iWHTe=>4!|&dr-Uv.uAB1N5via{}j
 
 ## Support Browsers
 
-- [node >= 16](./.browserslistrc)
+- [node >= 18](./.browserslistrc)
