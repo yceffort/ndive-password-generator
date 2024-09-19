@@ -1,5 +1,11 @@
 # @ndive/password-generator
 
+## 0.1.6
+
+### Patch Changes
+
+- 357fdc2: 이름을 `password-generator`로 통일합니다.
+
 ## 0.1.5
 
 ### Patch Changes
