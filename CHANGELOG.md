@@ -1,5 +1,11 @@
 # @ndive/password-generator
 
+## 0.1.4
+
+### Patch Changes
+
+- 40548e5: 🐛 누락된 기능 추가
+
 ## 0.1.3
 
 ### Patch Changes
