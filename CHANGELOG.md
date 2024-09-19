@@ -1,5 +1,11 @@
 # @ndive/password-generator
 
+## 0.1.7
+
+### Patch Changes
+
+- 3631024: bin 을 단일 파일로 변경
+
 ## 0.1.6
 
 ### Patch Changes
