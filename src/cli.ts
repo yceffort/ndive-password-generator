@@ -9,15 +9,15 @@ export function run(): void {
     const cli = meow(
         `
     Usage
-      $ generate-password [length]
+      $ password-generator [length]
 
     Options
       --length, -l  Length of the password (default: 12)
 
     Examples
-      $ generate-password
-      $ generate-password 16
-      $ generate-password -l 20
+      $ password-generator
+      $ password-generator 16
+      $ password-generator -l 20
   `,
         {
             importMeta: import.meta,
@@ -32,7 +32,7 @@ export function run(): void {
     )
 
     /**
-     * @description generate-password 10 과 generate-password -l 10 은 같은 결과를 반환한다. 더 편리한 사용을 위해 전자를 지원하며, 두개 모두가 들어올 경우 전자가 우선순위를 갖는다.
+     * @description password-generator 10 과 password-generator -l 10 은 같은 결과를 반환한다. 더 편리한 사용을 위해 전자를 지원하며, 두개 모두가 들어올 경우 전자가 우선순위를 갖는다.
      */
     const length = cli.input[0] ? parseInt(cli.input[0], 10) : cli.flags.length || DEFAULT_LENGTH
 

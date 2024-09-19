@@ -5,7 +5,7 @@
     "main": "./dist/index.js",
     "type": "module",
     "bin": {
-        "@ndive/password-generator": "./dist/index.js"
+        "password-generator": "./dist/index.js"
     },
     "scripts": {
         "prepare": "lefthook install -f",
