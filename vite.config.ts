@@ -16,6 +16,7 @@ export default defineConfig({
                     {
                         useBuiltIns: 'usage',
                         corejs: {version: 3, proposals: true},
+                        debug: true,
                     },
                 ],
             ],
@@ -29,15 +30,10 @@ export default defineConfig({
             entry: {
                 index: './src/index.ts',
             },
+            formats: ['es'],
         },
         rollupOptions: {
             external: [...Object.keys(pkg.dependencies)].flatMap((dep) => [dep, new RegExp(`^${dep}/.*`)]),
-            output: [
-                {
-                    format: 'es',
-                    dir: 'dist',
-                },
-            ],
         },
         target: SUPPORT_TARGETS,
     },
