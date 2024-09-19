@@ -36,6 +36,8 @@ export function run(): void {
      */
     const length = cli.input[0] ? parseInt(cli.input[0], 10) : cli.flags.length || DEFAULT_LENGTH
 
+    // const length = cli.input[0] ? parseInt(cli.input[0], 10) : DEFAULT_LENGTH
+
     if (isNaN(length) || length < MIN_PASSWORD_LENGTH) {
         // eslint-disable-next-line no-console
         console.error(chalk.red(`Error: Password length must be at least ${MIN_PASSWORD_LENGTH} characters.`))
