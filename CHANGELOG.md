@@ -1,5 +1,11 @@
 # @ndive/password-generator
 
+## 0.1.3
+
+### Patch Changes
+
+- 4f1856b: 암호 생성시 몇글자로 생성되었는지 메시지로 표시
+
 ## 0.1.2
 
 ### Patch Changes
