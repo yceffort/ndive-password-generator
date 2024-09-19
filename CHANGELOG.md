@@ -1,5 +1,11 @@
 # @ndive/password-generator
 
+## 0.1.5
+
+### Patch Changes
+
+- 101916c: bin 이름 변경
+
 ## 0.1.4
 
 ### Patch Changes
