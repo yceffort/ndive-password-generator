@@ -15,8 +15,8 @@ export default defineConfig({
                     '@babel/preset-env',
                     {
                         useBuiltIns: 'usage',
-                        corejs: {version: 3, proposals: true},
-                        // debug: true,
+                        corejs: {version: '3.39.0', proposals: true},
+                        debug: true,
                     },
                 ],
             ],
