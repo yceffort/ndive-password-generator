@@ -1,4 +1,5 @@
 {
+    "$schema": "https://json.schemastore.org/package",
     "name": "@ndive/password-generator",
     "version": "0.1.7",
     "description": "This CLI is a simple and efficient tool for generating secure random passwords of user-specified length.",
